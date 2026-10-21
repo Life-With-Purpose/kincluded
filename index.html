@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kincluded</title>
+<meta name="description" content="Kincluded is a private app for your family and the people you hold dear: photos and posts, chats, voice and video calls, daily quotes and short meditations.">
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/app-icon.png">
+<meta property="og:title" content="Kincluded">
+<meta property="og:description" content="A private app for your family and the people you hold dear.">
+<meta property="og:image" content="https://kincluded.com/app-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root { --bg: #F7FAF9; --card: #FFFFFF; --ink: #142220; --soft: rgba(20,34,32,0.68); --tint: #0B7A75; --mint: #E0F2F0; --border: rgba(20,34,32,0.10); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #04211F; --card: #0A2D2A; --ink: #EEF6F5; --soft: rgba(238,246,245,0.72); --tint: #3CC3B9; --mint: rgba(60,195,185,0.14); --border: rgba(255,255,255,0.12); } }
+  :root[data-theme="dark"] { --bg: #04211F; --card: #0A2D2A; --ink: #EEF6F5; --soft: rgba(238,246,245,0.72); --tint: #3CC3B9; --mint: rgba(60,195,185,0.14); --border: rgba(255,255,255,0.12); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'IBM Plex Sans', -apple-system, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 18px; }
+  .brand svg { width: 30px; height: 30px; }
+  nav a { color: var(--soft); text-decoration: none; margin-left: 18px; font-size: 15px; }
+  nav a:hover { color: var(--tint); }
+  .hero { text-align: center; padding: 56px 0 40px; }
+  .hero svg { width: 112px; height: 112px; }
+  h1 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: clamp(40px, 8vw, 64px); line-height: 1.05; margin: 20px 0 12px; letter-spacing: -0.02em; }
+  .slogan { font-size: clamp(18px, 3vw, 22px); color: var(--soft); max-width: 560px; margin: 0 auto 28px; }
+  .soon { display: inline-block; background: var(--tint); color: #fff; padding: 12px 22px; border-radius: 999px; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .soon { color: #04211F; } }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 32px 0 56px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px; }
+  .card h2 { font-size: 18px; margin: 0 0 6px; }
+  .card p { margin: 0; color: var(--soft); font-size: 15px; }
+  .dot { width: 40px; height: 40px; border-radius: 12px; background: var(--mint); display: grid; place-items: center; margin-bottom: 14px; color: var(--tint); font-size: 20px; }
+  .note { background: var(--mint); border-radius: 18px; padding: 22px; margin-bottom: 56px; }
+  .note h2 { font-family: 'Fraunces', Georgia, serif; font-size: 24px; margin: 0 0 6px; }
+  .note p { margin: 0; color: var(--soft); }
+  footer { border-top: 1px solid var(--border); padding: 24px 0 40px; color: var(--soft); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+  footer a { color: var(--soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="/" aria-label="Kincluded home">
+      <svg viewBox="64 56 384 384" aria-hidden="true"><path d="M212 192C174 160 112 177 112 232C112 287 193 345 256 382C319 345 400 287 400 232C400 177 338 160 300 192" fill="none" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" style="color:var(--tint)"/><circle cx="256" cy="116" r="30" fill="var(--tint)"/></svg>
+      Kincluded
+    </a>
+    <nav><a href="/privacy/">Privacy</a><a href="/privacy/#support">Support</a></nav>
+  </header>
+
+  <section class="hero">
+    <svg viewBox="64 56 384 384" role="img" aria-label="Kincluded logo"><path d="M212 192C174 160 112 177 112 232C112 287 193 345 256 382C319 345 400 287 400 232C400 177 338 160 300 192" fill="none" stroke="var(--tint)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/><circle cx="256" cy="116" r="30" fill="var(--tint)"/></svg>
+    <h1>Kincluded</h1>
+    <p class="slogan">For family and people whom you hold dear to your heart.</p>
+    <span class="soon">Coming soon to iPhone</span>
+  </section>
+
+  <section class="grid" aria-label="What Kincluded does">
+    <div class="card"><div class="dot" aria-hidden="true">♡</div><h2>Your family, privately</h2><p>Add the people you hold dear by phone number or email, and call them what you call them: Mom, Dad, Grandma.</p></div>
+    <div class="card"><div class="dot" aria-hidden="true">▣</div><h2>Share moments</h2><p>Photos and posts for all your family, only some people, or everyone except someone.</p></div>
+    <div class="card"><div class="dot" aria-hidden="true">✆</div><h2>Chat and call</h2><p>One-to-one or in groups, with voice and video calls.</p></div>
+    <div class="card"><div class="dot" aria-hidden="true">❦</div><h2>Calm and inspiration</h2><p>A quote for each day and short meditations, with a note to someone you love.</p></div>
+  </section>
+
+  <section class="note">
+    <h2>Only the people you choose</h2>
+    <p>There are no ads and no strangers. Nobody can browse who is on Kincluded: people find you only by typing your exact phone number or email, and every post goes only to the family you pick. <a href="/privacy/">Read the privacy policy</a>.</p>
+  </section>
+
+  <footer>
+    <span>© 2026 Kincluded</span>
+    <span><a href="/privacy/">Privacy policy</a> · <a href="mailto:lifewpurpose@gmail.com">lifewpurpose@gmail.com</a></span>
+  </footer>
+</div>
+</body>
+</html>
